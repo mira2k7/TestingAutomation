@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!---
+Parameter Description
+
+-->
+<suite name="QA Profile - Suite">
+
+	<listeners>
+		<listener class-name="com.common.testNG.TestListener"/>
+	</listeners>
+
+	<parameter name="testurl" value=""/>
+	<parameter name="chromeDriverPath" value="src\\test\\resources\\drivers\\latest\\chromedriver.exe"/>
+	<parameter name="ieDriverPath" value="src\\test\\resources\\drivers\\latest\\IEDriverServer.exe"/>
+	<parameter name="ffDriverPath" value="src\\test\\resources\\drivers\\geckodriver.exe"/>
+	<parameter name="browserType" value="chrome"/>
+	<parameter name="dataReaderType" value="Excel"/>
+
+	<test name="TestLogin">
+		<parameter name="inputDataFile" value="src\\test\\resources\\TestData.xls"/>
+		<parameter name="sheetName"  value="Login"/>
+		<parameter name="dataObject"  value="LoginDataObject"/>
+		<classes>
+			<class name="com.open.test.LoginTest"/>
+		</classes>
+	</test>
+	
+	<test name="TestKri">
+		<parameter name="inputDataFile" value="src\\test\\resources\\TestData.xls"/>
+		<parameter name="sheetName"  value="KRI"/>
+		<parameter name="dataObject"  value="KriDataObject"/>
+		<classes>
+			<class name="com.openpages.test.KriProfileTest"/>
+		</classes>
+	</test>
+	
+
+</suite>

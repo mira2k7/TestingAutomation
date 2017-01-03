@@ -1,0 +1,12 @@
+Estimation
+
+  Operational Issues  {....}
+  Dependencies ,...{SOAP WSDL, SOAP end Point,create specific user} 
+  access  Query Service and get list oe fected {SOAP cliet}
+  iteratet defect ans get test case description  {Process+ Spike}  {JIRa }
+   TestNG - Suite
+  execute corresponding 
+
+
+
+
