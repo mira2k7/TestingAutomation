@@ -22,7 +22,7 @@ public class ExecutionParameters {
 	public ExecutionParameters(ITestContext context){
        this.testContext = context;
 	   assignFieldValues();
-	   System.out.println("new testing");
+	   System.out.println("next testing");
 	}
 
 
